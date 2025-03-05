@@ -1,0 +1,45 @@
+# 1、技术框架选型
+
+## 1.1、java框架选型
+
+目前主流的java框架为springboot，可以快速搭建单体项目
+
+## 1.2、java版本
+
+目前java11是java最新长期支持版本，可用于生产环境
+
+## 1.3、web容器
+
+目前主流的web容器为tomcat、undertow、jetty，而undertow相比其他漏洞较少，性能较高
+
+## 1.4、权限认证管理
+
+采用jwt，不使用shiro，springsecurity等框架增加复杂度，可自行使用jwt实现权限认证
+
+## 1.5、缓存管理（待定）
+
+如果引擎有信息需要存储到缓存中与java共享那么使用redis，如果只是java单独使用缓存可以不使用redis增加维护成本而使用ehcache做本地缓存管理
+
+## 1.6、mysql版本
+
+5.xx和8.xx中进行选择，需要调研性能，本周完成
+
+## 1.7、与c的通信 （域Socket）
+
+域socket
+
+## 1.8、UI框架
+
+elementui
+
+## x、遗留问题
+
+？特征事件按事件类型分表
+
+
+
+不用nginx，前端资源放springboot
+
+# 2、初步架构图
+
+![cs-plus](cs-plus.png)
